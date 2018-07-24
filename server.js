@@ -86,4 +86,5 @@ app.put('/image',(req,res)=>{
 		res.status(400).json('error in updating entries');
 	})
 })
-app.listen(process.env.PORT||3000);
+let port=Number(process.env.PORT || 3000);
+app.listen(port);
